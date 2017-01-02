@@ -1,0 +1,20 @@
+.header{background: #7cbfa9;border-color: #7cbfa9;}
+.header_small{background: #7cbfa9;}
+.main .content_main .content_header{background: #7cbfa9;height: 40px;line-height: 42px;font-size: 19px;}
+
+.main .main_article .content_header{height: auto;}
+.main .content_main .content_header .article_more_info {font-size: 13px;display: block;line-height: 27px;}
+.main .content_main .content_header .title{display: block;font-size: x-large;width: 100%;text-align: center;}
+.main .content_main .content_header .article_more_info{width: 100%;text-align: center;}
+
+.main .main_article .article_display{width: 90%;height:auto;margin:20px auto;padding-top:20px;min-height: 300px;font-size: 15px;text-indent: 32px;}
+.main .main_article .article_display img{width: 80%;margin: 20px auto;display: block;border-radius: 26px;border: 1px solid black;}
+
+.main .article_comment .comment_list .article_overview{width: 90%;height:auto;margin:1px auto;float: none;display: block;}
+.main .article_comment .comment_list .article_overview .content_header_avatar{float: left;left: 5px;}
+.main .article_comment .comment_list .article_overview .content_header_title{width: 100px;overflow: hidden;}
+.main .article_comment .comment_list .article_overview .content_add_time{float: right;right: 6px;position: relative;font-size: 12px;}
+.main .article_comment .comment_list .article_overview .preview_content{padding-top: 6px;height: auto;padding-bottom: 5px;margin-bottom: 17px;}
+.main .article_comment .comment_list .article_overview .preview_content .comment_op{width: 100%;height: 20px;margin-top: 17px;margin-left: 8px;}
+.main .article_comment .comment_list .article_overview .preview_content .comment_op div{margin:auto 10px;float:left;display: inline-block;text-indent: 0;}
+
