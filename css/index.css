@@ -6,7 +6,7 @@
 .main .content_main .article_list{padding-top: 20px;width: 100%;height: auto;display: inline-block;border-radius: 9px 9px 0 0;/*background: greenyellow;*/}
 .main .content_main .article_overview{width: 33.3%;height: 200px;display: inline-block;float:left;position: relative;border-radius: 9px 9px 0 0;margin-bottom: 10px;/*background: wheat;*/}
 .main .content_main .article_overview:hover{z-index: 1;}
-.main .content_main .article_overview:hover .content_header{height: auto;width: 90%;border: 1px solid #b7b2b2;padding-bottom: 10px;}
+.main .content_main .article_overview:hover .content_header{height: auto;width: 90%;border: 1px solid #b7b2b2;padding-bottom: 10px;background: #f0f3ed;}
 .main .content_main .article_overview:hover .preview_content{border: 1px solid #b7b2b2;border-top-width:0;}
 
 .main .content_main .article_overview .content_header{width: 90%;margin: 0 auto;}
@@ -21,6 +21,7 @@
 .main .content_main .article_overview_middle{width: 50%;height: 210px;}
 .main .content_main .article_overview_middle .preview_content{height: 156px;}
 .main .content_main .article_overview_small{width: 100%;height: auto;}
+.main .content_main .article_overview_small .content_header{height: auto;background: #f0f3ed;}
 .main .content_main .article_overview_small .preview_content{height: auto;padding-bottom: 17px;}
 
 .main .content_main_small{width: 100%}
