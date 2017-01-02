@@ -21,7 +21,7 @@
 .main .content_main .article_overview_middle{width: 50%;height: 210px;}
 .main .content_main .article_overview_middle .preview_content{height: 156px;}
 .main .content_main .article_overview_small{width: 100%;height: auto;}
-.main .content_main .article_overview_small .content_header{height: auto;background: #f0f3ed;}
+.main .content_main .article_overview_small .content_header{height: auto;background: #f0f3ed;padding-bottom: 10px;border-top: 1px solid #b7b2b2;}
 .main .content_main .article_overview_small .preview_content{height: auto;padding-bottom: 17px;}
 
 .main .content_main_small{width: 100%}
