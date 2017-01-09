@@ -17,7 +17,3 @@
 .main .article_comment .comment_list .article_overview .preview_content .comment_op{width: 100%;height: 25px;line-height: 25px;}
 .main .article_comment .comment_list .article_overview .preview_content .comment_op div{margin:auto 10px;float:left;display: inline-block;text-indent: 0;}
 
-/*相关评论*/
-.relative_comment_list{width: 99%;height: auto;overflow:hidden;margin: 3px auto;/*border:1px solid #75c1ba;*/}
-.relative_comment_list div{width: 98%;height: auto;border:1px solid #879884;right: 0;position: relative;display:block;margin: 2px auto;text-indent:10px;border-radius: 5px;}
-.relative_comment_list div p{display: block;width: 98%;margin: 5px auto;}
