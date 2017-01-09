@@ -22,9 +22,10 @@
 .relative_comment_list div{width: 98%;height: auto;border:1px solid #879884;right: 0;position: relative;display:block;margin: 2px auto;border-radius: 5px;}
 .relative_comment_list div p{display: block;width: 98%;margin: 10px auto;}
 
-.relative_comment_list .relative_comment .relative_comment_op {text-align: right;height: auto;margin:0 auto;}
-.relative_comment_list .relative_comment .report_comment{visibility: hidden;}
-.relative_comment_list .relative_comment .relative_comment_op a{visibility: hidden;}
+.relative_comment_list .relative_comment_op {text-align: right;height: auto;margin:0 auto;}
+.relative_comment_list .report_comment{visibility: hidden;}
+.relative_comment_list .relative_comment_op{visibility: hidden;}
 
-.relative_comment_list .relative_comment_hover .relative_comment_op a{visibility: visible;}
-.relative_comment_list .relative_comment_hover .report_comment{visibility: visible;}
+.relative_comment_list .comment_info{display: block;border: 0;}
+.relative_comment_list .comment_info:hover .relative_comment_op{visibility: visible;}
+.relative_comment_list .comment_info:hover .report_comment{visibility: visible;}

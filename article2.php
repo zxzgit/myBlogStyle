@@ -258,14 +258,32 @@
 					</div>
 					<!--关联评论-->
 					<div class="relative_comment_list">
-						<div class="relative_comment">
-							<div class="relative_comment">
+						<div>
+							<div>
+								<div class="comment_info">
+									<p>
+										<a href="#">user1</a>
+										<a class="report_comment" href="#">举报</a>
+										<time>====2017-1-9 16:02:52</time>
+									</p>
+									<p>content1</p>
+
+									<p class="relative_comment_op">
+										<a href="#">顶(10000)</a>
+										<a href="#">踩(100)</a>
+										<a href="#">回复</a>
+										<a href="#">分享</a>
+									</p>
+								</div>
+							</div>
+							<div class="comment_info">
 								<p>
-									<a href="#">user1</a>
+									<a href="#">user2</a>
 									<a class="report_comment" href="#">举报</a>
 									<time>====2017-1-9 16:02:52</time>
 								</p>
-								<p>content1</p>
+								<p>content2</p>
+
 								<p class="relative_comment_op">
 									<a href="#">顶(10000)</a>
 									<a href="#">踩(100)</a>
@@ -273,25 +291,13 @@
 									<a href="#">分享</a>
 								</p>
 							</div>
-							
-							<p>
-								<a href="#">user2</a>
-								<a class="report_comment" href="#">举报</a>
-								<time>====2017-1-9 16:02:52</time>
-							</p>
-							<p>content2</p>
-							<p class="relative_comment_op">
-								<a href="#">顶(10000)</a>
-								<a href="#">踩(100)</a>
-								<a href="#">回复</a>
-								<a href="#">分享</a>
-							</p>
+
 						</div>
 					</div>
 					<!--评论内容以及相关操作-->
 					<div class="preview_content">
 						<div class="preview_content_show">
-						this user comment content
+							this user comment content
 						</div>
 						<div class="comment_op">
 							<div>踩(0)</div>
@@ -327,63 +333,63 @@
 
 <script>
 	(function ($) {
-		var doAjax       = function (callback) {
+		var doAjax = function (callback) {
 				$.ajax({
-					url     : 'getComment2.php',
-					data    : {},
-					type    : 'get',
+					url: 'getComment2.php',
+					data: {},
+					type: 'get',
 					dataType: "json",
-					success : function (result) {
+					success: function (result) {
 						callback(result);
 						return true;
 					},
-					error   : function () {
+					error: function () {
 						alert('获取评论失败！');
 					}
 				});
 				return true;
 			},
-			getComment   = function (page) {
+			getComment = function (page) {
 				$('.comment_list').html('加载中...');
 				doAjax(function (result) {
 					var relativeCmidsList = result.relativeCmidsList,
-						commentsList      = result.commentsList,
-						pageCommentHtml   = '';
+						commentsList = result.commentsList,
+						pageCommentHtml = '';
 //					console.log(relativeCmidsList);
 					for (var cmIndex in relativeCmidsList) {
-						var cmidsStr  = relativeCmidsList[cmIndex],
+						var cmidsStr = relativeCmidsList[cmIndex],
 							cmidsList = cmidsStr.split(',').reverse();
-					
-						var mainCmid         = cmidsList.shift(),
-							showHtml         = '',
-							comment          = '',
+
+						var mainCmid = cmidsList.shift(),
+							showHtml = '',
+							comment = '',
 							thisCommentBlock = commentBlock.replace('{{username}}', commentsList[mainCmid]['from_uid'])
 								.replace('{{addtime}}', commentsList[mainCmid]['addtime'])
 								.replace('{{commentContent}}', commentsList[mainCmid]['content']);
-					
-					
+
+
 						for (var i = 0; i < cmidsList.length; i++) {
 							comment = commentsList[cmidsList[i]] ? commentsList[cmidsList[i]] : '';
-						
+
 							//当数据评论过多时，中奖的部分宽度100%，使其不会因为评论过多导致最顶端评论宽度十分狭窄
 							var middleStr = '';
 							if (cmidsList.length > 10 && i == 4) {
-								i++;
 								while (i < cmidsList.length - 3) {
+									i++;
 									var commentMiddle = commentsList[cmidsList[i]] ? commentsList[cmidsList[i]] : '';
 									middleStr += '<div style="width: 100%;border-width: 0;border-top-width: 1px;border-radius: 0px;">';
 									if (commentMiddle) {
 										middleStr += ''
-											+ '<p>'
-											+ commentMiddle['from_uid'] + '    <time>' + commentMiddle['addtime'] + '</time>'
-											+ '</p>'
-											+ '    <p>' + commentMiddle['content'] + '</p>';
+											+ relativeCommentInfo
+												.replace('{{username}}', commentMiddle['from_uid'])
+												.replace('{{addtime}}', commentMiddle['addtime'])
+												.replace('{{content}}', commentMiddle['content'])
+												.replace('{{up}}', commentMiddle['up'])
+												.replace('{{down}}', commentMiddle['down'])
 									} else {
 										middleStr += '<p>该评论已经删除<p>';
 									}
 									middleStr += '</div> ';
-								
-									i++;
 								}
 							}
 //							console.log(middleStr);
@@ -393,60 +399,74 @@
 								showHtml = ''
 									+ '<div>'
 									+ showHtml
-									+ '    <p>' + comment['from_uid'] + '    <time>' + comment['addtime'] + '</time>' + '</p>'
-									+ '    <p>' + comment['content'] + '</p>'
+									+ relativeCommentInfo
+										.replace('{{username}}', comment['from_uid'])
+										.replace('{{addtime}}', comment['addtime'])
+										.replace('{{content}}', comment['content'])
+										.replace('{{up}}', comment['up'])
+										.replace('{{down}}', comment['down'])
 									+ middleStr
 									+ '</div>';
 							}
-						
-						
+
+
 						}
-						showHtml=showHtml?'<div class="relative_comment_list">'+showHtml+'</div>':showHtml;
-					
+						showHtml = showHtml ? '<div class="relative_comment_list">' + showHtml + '</div>' : showHtml;
+
 						thisCommentBlock = thisCommentBlock.replace('{{relativeComment}}', showHtml);
 
 //						console.log(thisCommentBlock);
 						pageCommentHtml += thisCommentBlock;
 					}
-					$('.comment_list').html(pageCommentHtml?pageCommentHtml:'还没有评论。');
+					$('.comment_list').html(pageCommentHtml ? pageCommentHtml : '还没有评论。');
 				});
 			},
 			commentBlock = '' +
-			'<li class="article_overview">' +
-			'   <div class="article_overview_wrap">' +
-			
-			'     <div class="content_header">' +
-			'        <a href="#" class="content_header_avatar">' +
-			'           <img src="img/avatar.png">' +
-			'        </a>' +
-			
-			'        <div class="content_header_title">' +
-			'           <a href="#">{{username}}</a>' +
-			'        </div>' +
-			'        <div class="content_add_time">{{addtime}}</div>' +
-			'     </div>' +
-			
-			'     {{relativeComment}}' +
-			
-			'     <div class="preview_content">' +
-			'        <div class="preview_content_show">{{commentContent}}</div>' +
-			'        <div class="comment_op">' +
-			'           <div>踩(0)</div>' +
-			'           <div>回复(0)</div>' +
-			'           <div>举报</div>' +
-			'        </div>' +
-			'     </div>' +
-			'   </div>' +
-			'</li>';
-		
-		
-//		getComment();
-		$('body').on('mouseover','.relative_comment',function () {
-			$('.relative_comment').removeClass('relative_comment_hover');
-			$(this).addClass('relative_comment_hover');
-		}).on('mouseout','.relative_comment',function () {
-			$('.relative_comment').removeClass('relative_comment_hover');
-		});
+				'<li class="article_overview">' +
+				'   <div class="article_overview_wrap">' +
+
+				'     <div class="content_header">' +
+				'        <a href="#" class="content_header_avatar">' +
+				'           <img src="img/avatar.png">' +
+				'        </a>' +
+
+				'        <div class="content_header_title">' +
+				'           <a href="#">{{username}}</a>' +
+				'        </div>' +
+				'        <div class="content_add_time">{{addtime}}</div>' +
+				'     </div>' +
+
+				'     {{relativeComment}}' +
+
+				'     <div class="preview_content">' +
+				'        <div class="preview_content_show">{{commentContent}}</div>' +
+				'        <div class="comment_op">' +
+				'           <div>踩(0)</div>' +
+				'           <div>回复(0)</div>' +
+				'           <div>举报</div>' +
+				'        </div>' +
+				'     </div>' +
+				'   </div>' +
+				'</li>',
+			relativeCommentInfo = ''
+				+ '<div class="comment_info">'
+				+ '   <p>'
+				+ '     <a href="#">{{username}}</a>'
+				+ '     <a class="report_comment" href="#">举报</a>'
+				+ '     <time>{{addtime}}</time>'
+				+ '   </p>'
+
+				+ '   <p>{{content}}</p>'
+
+				+ '   <p class="relative_comment_op">'
+				+ '     <a href="#">顶({{up}})</a>'
+				+ '     <a href="#">踩({{down}})</a>'
+				+ '     <a href="#">回复</a>'
+				+ '     <a href="#">分享</a>'
+				+ '   </p>'
+				+ '</div>';
+
+		getComment();
 	})(jQuery);
 </script>
 
