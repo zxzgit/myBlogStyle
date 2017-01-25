@@ -1,0 +1,22 @@
+/*页面字体颜色控制*/
+body{color: #2c2d2f;}
+
+/*a标签样式控制*/
+a{color:#001ba0;}
+
+/*顶部头部样式设置*/
+.header{background: #f8f8f8;}
+
+/*小头部控制*/
+.header_small {
+	background: #f8f8f8;
+}
+
+.main{background: #e7e7e7;border-width: 0;}
+.main .content_main {background: white;}
+
+/*小头部设置*/
+.main .content_main .content_header{background: #f8f8f8;border-bottom: 1px solid #a5ada5;}
+
+/*概要小方块的样式*/
+.main .content_main .article_overview .article_overview_wrap{background: white;}

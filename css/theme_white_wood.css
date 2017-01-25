@@ -1,0 +1,22 @@
+/*页面字体颜色控制*/
+body{color: black;background: url(../img/wood.png);}
+
+/*a标签样式控制*/
+a{color:#8babaf;}
+
+/*顶部头部样式设置*/
+.header{background: #235717;}
+
+/*小头部控制*/
+.header_small {
+	background: #235717;
+}
+
+.main{background: none;border-width: 0;}
+.main .content_main {background: none;}
+
+/*小头部设置*/
+.main .content_main .content_header{background: #235717;border-bottom: 1px solid #a5ada5;}
+
+/*概要小方块的样式*/
+.main .content_main .article_overview .article_overview_wrap{background: url(../img/wood.png);}
