@@ -13,7 +13,7 @@ a{color:#8babaf;}
 }
 
 .main{background: none;border-width: 0;}
-.main .content_main {background: none;}
+.main .content_main {background: none;border-width:0;}
 
 /*小头部设置*/
 .main .content_main .content_header{background: #235717;border-bottom: 1px solid #a5ada5;}
