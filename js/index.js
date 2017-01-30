@@ -28,21 +28,21 @@ common0bj.windowResizeEvents.push(
 		selectScrollDiv = $('.jsSelectScroll'),
 		divImgList = $(scrollSwapDom).find('div'),
 		scrollCount = divImgList.length,//轮播图片数
-		selectLiWidth = 19,//每个选择器所需宽度
+		selectLiWidth = 28,//每个选择器所需宽度
 		doScroll = function () {
 			$(divImgList).hide();
 			$(divImgList[showId]).show();//展示轮到的图片
+			$(selectScrollDiv).find('li').removeClass('on');
+			$($(selectScrollDiv).find('li')[showId]).addClass('on');
 			showId++;
 			if (showId >= scrollCount) {
 				showId = 0;
 			}
-		},
-		scrollInterval = setInterval(doScroll, 1000);//图片轮播器执行
+		};
 	//制造轮播图片选择器
-	(function () {
-		$(selectScrollDiv).width(selectLiWidth * scrollCount);
-		$(selectScrollDiv).find('ul').html((new Array(scrollCount + 1)).join('<li></li>'));
-	})();
+	$(selectScrollDiv).width(selectLiWidth * scrollCount).find('ul').html((new Array(scrollCount + 1)).join('<li></li>'));
+	doScroll();
+	var scrollInterval = setInterval(doScroll, 5000);//图片轮播器执行
 	//鼠标移到图片选择器
 	$(selectScrollDiv).find('ul li').mouseover(function () {
 		clearInterval(scrollInterval);
@@ -51,6 +51,6 @@ common0bj.windowResizeEvents.push(
 	});
 	//鼠标移出图片选择器
 	$(selectScrollDiv).find('ul li').mouseleave(function () {
-		scrollInterval = setInterval(doScroll, 1000);//图片轮播器执行
+		scrollInterval = setInterval(doScroll, 5000);//图片轮播器执行
 	});
 })();
