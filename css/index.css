@@ -1,4 +1,4 @@
-.main .content_main{width: 90%;min-height:80px;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;border: 6px solid white;background: #fbfbfb;}
+.main .content_main{width: 90%;min-height:80px;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;border: 6px solid white;background: white;}
 
 .main .content_main a:hover{text-decoration: underline;}
 
@@ -7,8 +7,8 @@
 .main .content_main .article_overview{width: 33.3%;height: 200px;display: inline-block;float:left;position: relative;border-radius: 9px 9px 0 0;margin-bottom: 10px;/*background: wheat;*/}
 .main .content_main .article_overview:hover{z-index: 1;}
 
-.main .content_main .article_overview .article_overview_wrap{background: #e7e7e7;width: 90%;margin: 0 auto;height: auto;border: 3px solid white;border-radius: 5px;}
-.main .content_main .article_overview .article_overview_wrap:hover{background: white;box-shadow: 0 0px 14px 0 rgba(0,0,0,0.32);border-color: #91a091;}
+.main .content_main .article_overview .article_overview_wrap{background: white;width: 90%;margin: 0 auto;height: auto;border: 4px solid #e7e7e7;border-radius: 5px;}
+.main .content_main .article_overview .article_overview_wrap:hover{background: #e7e7e7;box-shadow: 0 0px 14px 0 rgba(0,0,0,0.32);border-color: #e7e7e7;}
 
 .main .content_main .article_overview .content_header{width: 100%;margin: 0 auto;}
 .main .content_main .article_overview .content_header .content_header_title{float: left;font-size: 0.855em;width: 210px;height: 40px;overflow: hidden;}
