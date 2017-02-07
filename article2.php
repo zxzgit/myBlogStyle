@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/article.css">
+	<link rel="stylesheet" href="css/theme_white.css">
 	<script src="js/com/jquery1.7.2.js"></script>
 </head>
 <body>

@@ -13,10 +13,11 @@ a{color:#001ba0;}
 }
 
 .main{background: none;border-width: 0;}
-.main .content_main {background: none;}
+.main .content_main {background: #e7e7e7;}
 
 /*小头部设置*/
-.main .content_main .content_header{background: #f8f8f8;border-bottom: 1px solid #a5ada5;}
+.main .content_main .content_header{background: none;/*border-bottom: 1px solid #a5ada5;*/}
 
 /*概要小方块的样式*/
-.main .content_main .article_overview .article_overview_wrap{background: white;}
+.main .content_main .article_overview .article_overview_wrap{background: #e7e7e7;}
+.main .content_main .article_overview .content_header{background: none;border-bottom: 1px solid #c4cac4;}
