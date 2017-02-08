@@ -2,14 +2,14 @@
 body{background: #e7e7e7;}
 
 /*-----------------------------header start -----------------------------------------*/
-.header_small{text-align:center;width: 100%;height: 45px;position: fixed;left: 0;top:0;border: 1px #c7c3c3 solid;background: #f8f8f8;z-index: 998;box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.32);_display:none;}
-.header_small .logo{line-height: 45px;float: left;margin-left: 10px;}
-.header_small .nav_toggle{border-radius:3px;width: 49px;height: 32px;position: relative;float:right;right: 10px;top:7px;bottom:7px;border: 1px #c7c3c3 solid;}
-.header_small .nav_toggle span{background: #7b7070;height:3px;width: 72%;display: block;margin: 6px auto 2px;}
+.header_small{text-align:center;width: 100%;height: 36px;position: fixed;left: 0;top:0;border: 1px #c7c3c3 solid;background: #f8f8f8;z-index: 998;box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.32);_display:none;}
+.header_small .logo{line-height: 36px;float: left;margin-left: 10px;}
+.header_small .nav_toggle{border-radius:3px;width: 49px;height: 28px;position: relative;float:right;right: 10px;top:3px;border: 1px #c7c3c3 solid;}
+.header_small .nav_toggle span{background: #7b7070;height:3px;width: 72%;display: block;margin: 4.9px auto 2px;}
 
-.header{ width: 100%;  height: 45px; right: 0; top:0; border-bottom: 1px solid #e7e7e7; position: fixed;z-index: 999; background: #f8f8f8; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32);_position: absolute;}
+.header{ width: 100%;  height: 36px; right: 0; top:0; border-bottom: 1px solid #e7e7e7; position: fixed;z-index: 999; background: white; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.32);_position: absolute;}
 .header .nav_list{width: 600px;height: 100%;margin: 0 auto;float: right;}
-.header .nav_list .nav{width: 19%;height: 100%;display: inline-block;float: left;line-height: 45px;text-align: center;}
+.header .nav_list .nav{width: 19%;height: 100%;display: inline-block;float: left;line-height: 36px;text-align: center;}
 .header .nav_list .nav a{width: 100%;height: 100%;display: block;text-decoration: none;}
 .header .nav_list .nav a.on{z-index: 1000;position: relative;color: #9a9494;font-size: 17px;}
 .header .nav_list .nav a:hover{background: #d6eadc;}
@@ -22,7 +22,7 @@ body{background: #e7e7e7;}
 /*-----------------------------header end  ------------------------------------------*/
 
 
-.main{border-radius:7px;background:none;width: 1000px;height:auto;min-height: 500px; top:50px; margin: 10px auto;padding: 5px;  position: relative;  border: 0px solid gainsboro;}
+.main{border-radius:7px;background:none;width: 1000px;height:auto;min-height: 500px; top:44px; margin: 10px auto;padding: 5px;  position: relative;  border: 0px solid gainsboro;}
 .main_small_size{width: 93%;}
 .main_smallest_size{width: 300px;margin-left: 10px;}
 

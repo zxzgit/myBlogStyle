@@ -1,6 +1,6 @@
-.header{background: #7cbfa9;}
-.header_small{background: #7cbfa9;}
-.main .content_main .content_header{background: #7cbfa9;height: 40px;line-height: 42px;font-size: 19px;}
+.header{}
+.header_small{}
+.main .content_main .content_header{height: 40px;line-height: 42px;font-size: 19px;}
 
 .main .main_article .content_header{height: auto;}
 .main .content_main .content_header .article_more_info {font-size: 13px;display: block;line-height: 27px;}

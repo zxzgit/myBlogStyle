@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Title</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/theme_white.css">
+	<script src="js/com/jquery1.7.2.js"></script>
+	<style>
+		.main .login_panel{width: 48%;height: 232px;margin: 92px auto;}
+		.main .login_panel_middle{width: 67%;}
+		.main .login_panel_small{width: 90%;}
+		.main .login_panel .from_wrap input{padding:0 10px 0 10px;width: 70%;height:30px;display: inline-block;margin: 10px auto;border-radius: 5px;border: 1px solid #dec8c8;line-height: 30px;}
+		.main .login_panel .from_wrap label{display: inline-block;width: 20%;text-align: right;}
+		.main .login_panel .from_wrap .input_line{display: block;margin: 10px auto;width: 72%;}
+		.main .login_panel .from_wrap .remember_login{width: 20px;border-width: 0;}
+
+		.main .login_panel_small .from_wrap label{display: none;}
+		.main .login_panel_small .from_wrap .input_line{width: 90%;}
+		.main .login_panel_small .from_wrap input{width: 90%;}
+
+	</style>
+</head>
+<body>
+<div class="header_small">
+	<a href="#" class="logo">myBlog</a>
+	<a href="javascript:void(0);" class="nav_toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</div>
+
+<div class="header">
+	<div class="nav_list">
+		<div class="nav"><a href="javascript:void(0);" class="on">主页</a></div>
+		<div class="nav"><a href="#">关于</a></div>
+		<div class="nav"><a href="#">文章</a></div>
+		<div class="nav"><a href="#">概念</a></div>
+		<div class="nav"><a href="#">更多</a></div>
+	</div>
+</div>
+
+
+
+<!--内容主区-->
+<div class="main">
+	<div class="content_main login_panel">
+		<span class="content_header">登录</span>
+		<div class="from_wrap">
+			<form action="#" method="post">
+				<div class="input_line">
+					<label>账号：</label><input name="name" type="text" placeholder="用户名">
+				</div>
+				<div class="input_line">
+					<label>密码：</label><input name="name" type="password" placeholder="密码">
+				</div>
+				<div class="input_line">
+					<label></label><input class="remember_login" name="name" type="checkbox" placeholder="密码"> 一个月内自动登录
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="footer">
+	<div class="footer_main">
+		<div class="footer_main_content">
+			<div>Copyright © 2011-2016 SeasonZheng</div>
+			<div>SeasonZheng信息科技有限公司 版权所有</div>
+			<div>闽B2-2013xxxx 闽网文[2013]xxxx-xxx号 闽ICP备xxxxxxxx号</div>
+			<div>闽公网安备35020302xxxxx号</div>
+			<div>联系电话：0592-xxxxxxx</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/com/common.js"></script>
+<script src="js/index.js"></script>
+<script>
+	common0bj.windowResizeEvents.push(
+			(function () {
+				return function () {
+					var mainClass = '.main',
+							mainDomWidth = $(mainClass).width(),
+							articleOverviewClass = '.login_panel',
+							contentMain = $(mainClass).find('.content_main'),
+							cms = 'content_main_small';
+					(mainDomWidth < 700) ? $(articleOverviewClass).addClass('login_panel_middle') : $(articleOverviewClass).removeClass('login_panel_middle');
+					(mainDomWidth < 600) ? $(contentMain).addClass(cms) : $(contentMain).removeClass(cms);
+					(mainDomWidth < 500) ? $(articleOverviewClass).addClass('login_panel_small') : $(articleOverviewClass).removeClass('login_panel_small');
+
+				};
+
+			})()
+	);
+</script>
+</body>
+</html>
