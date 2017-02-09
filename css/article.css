@@ -3,12 +3,12 @@
 .main .content_main .content_header{height: 40px;line-height: 42px;font-size: 19px;}
 
 .main .main_article .content_header{height: auto;}
-.main_small_size .main_article{background: white;}
+.main_small_size .main_article{background: white;width: 95%;}
 .main .content_main .content_header .article_more_info {font-size: 13px;display: block;line-height: 27px;}
 .main .content_main .content_header .title{display: block;font-size: x-large;width: 100%;text-align: center;}
 .main .content_main .content_header .article_more_info{width: 100%;text-align: center;}
 
-.main .main_article .article_display{width: 90%;height:auto;margin:20px auto;padding-top:20px;min-height: 300px;font-size: 15px;text-indent: 32px;}
+.main .main_article .article_display{width: 90%;height:auto;margin:20px auto;padding-top:20px;min-height: 300px;font-size: 17px;line-height: 26px;text-indent: 32px;font-family: 'Roboto',arial,sans-serif;}
 .main .main_article .article_display img{width: 80%;margin: 20px auto;display: block;border-radius: 26px;border: 1px solid black;}
 
 .main .article_comment .comment_list .article_overview{width: 100%;height:auto;margin:10px auto;float: none;display: block;}
@@ -21,7 +21,7 @@
 .main .article_comment .comment_list .content_header_title a{font-size: 15px;}
 /*相关评论*/
 .relative_comment_list{width: 99%;height: auto;overflow:hidden;margin: 3px auto;font-size: 14px;/*border:1px solid #75c1ba;*/}
-.relative_comment_list div{width: 98%;height: auto;border:1px solid #879884;right: 0;position: relative;display:block;margin: 2px auto;border-radius: 5px;}
+.relative_comment_list div{width: 98%;height: auto;border:1px solid #bcc5ba;right: 0;position: relative;display:block;margin: 2px auto;border-radius: 3px;background: #f8fbfa;}
 .relative_comment_list div p{display: block;width: 98%;margin: 10px auto;}
 
 .relative_comment_list .relative_comment_op {text-align: right;height: auto;margin:0 auto;}

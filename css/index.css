@@ -1,4 +1,4 @@
-.main .content_main{width: 90%;min-height:80px;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;border: 6px solid white;background: white;}
+.main .content_main{width: 90%;min-height:80px;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;border: 14px solid white;background: white;}
 .main_small_size .content_main{background: none;border-width: 0;width: 100%;border-radius: 0;}/*小屏幕*/
 .main .content_main a:hover{text-decoration: underline;}
 
@@ -8,8 +8,8 @@
 .main .content_main .article_overview{width: 33.3%;height: auto;display: inline-block;float:left;position: relative;border-radius: 9px 9px 0 0;margin-bottom: 10px;/*background: wheat;*/}
 /*.main .content_main .article_overview:hover{z-index: 1;}*/
 
-.main .content_main .article_overview .article_overview_wrap{background: white;width: 90%;margin: 0 auto;height: auto;border: 2px solid #e7e7e7;border-radius: 5px;position: relative;}
-.main_small_size  .content_main .article_overview .article_overview_wrap{width: 100%;border-width: 1px 0;border-radius: 0;}
+.main .content_main .article_overview .article_overview_wrap{background: white;width: 90%;margin: 0 auto;height: auto;border: 1px solid #d2d1d1;border-radius: 3px;position: relative;}
+.main_small_size  .content_main .article_overview .article_overview_wrap{width: 95%;border-width: 1px;}
 .main .content_main .article_overview .article_overview_wrap:hover{background: #fbfbfb;box-shadow: 0 0px 14px 0 rgba(0,0,0,0.32);border-color: #e0dcdc;}
 
 .main .content_main .article_overview .content_header{width: 100%;margin: 0 auto;position: relative;background: none;/*border-bottom: 1px solid #c4cac4;*/}
