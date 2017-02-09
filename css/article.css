@@ -13,11 +13,12 @@
 
 .main .article_comment .comment_list .article_overview{width: 100%;height:auto;margin:10px auto;float: none;display: block;}
 .main .article_comment .comment_list .article_overview .content_header_avatar{float: left;left: 5px;}
-.main .article_comment .comment_list .article_overview .content_header_title{width: 100px;overflow: hidden;}
-.main .article_comment .comment_list .article_overview .content_add_time{float: right;right: 6px;position: relative;font-size: 12px;}
+.main .article_comment .comment_list .article_overview .content_header_title{width: 210px;overflow: hidden;}
+.main .article_comment .comment_list .article_overview .content_header_title .content_add_time{position: relative;font-size: 12px;color: #8590a6;}
 .main .article_comment .comment_list .article_overview .preview_content .comment_op{width: 100%;height: 25px;line-height: 25px;}
-.main .article_comment .comment_list .article_overview .preview_content .comment_op div{margin:auto 10px;float:left;display: inline-block;text-indent: 0;}
-
+.main .article_comment .comment_list .article_overview .preview_content .comment_op a{margin:auto 10px;float:left;display: inline-block;text-indent: 0;}
+.main .article_comment .comment_list a{font-size: 12px;}
+.main .article_comment .comment_list .content_header_title a{font-size: 15px;}
 /*相关评论*/
 .relative_comment_list{width: 99%;height: auto;overflow:hidden;margin: 3px auto;font-size: 14px;/*border:1px solid #75c1ba;*/}
 .relative_comment_list div{width: 98%;height: auto;border:1px solid #879884;right: 0;position: relative;display:block;margin: 2px auto;border-radius: 5px;}
@@ -30,3 +31,6 @@
 .relative_comment_list .comment_info{display: block;border: 0;}
 .relative_comment_list .comment_info:hover .relative_comment_op{visibility: visible;}
 .relative_comment_list .comment_info:hover .report_comment{visibility: visible;}
+
+.relative_comment_list .comment_info .user_header_img{width: 32px;height: 32px;border-radius: 16px;}
+.relative_comment_list .comment_info .time{font-size: 12px;color: #8590a6;font-style: normal;}

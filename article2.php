@@ -156,30 +156,45 @@
 			<li class="article_overview">
 				<div class="article_overview_wrap">
 					<div class="content_header">
-						<a href="#" class="content_header_title">一二三四五六七八九十啊哦额</a>
-						<a href="#" class="content_header_avatar">
-							<img src="img/avatar.png">
-						</a>
+						<div  class="content_header_avatar">
+							<a><img src="img/avatar.png"></a>
+						</div>
+						<div class="content_header_title">
+							<div>
+								<a href="#">一二三四五六七八九十啊哦额</a>
+							</div>
+							<div>作者：<a href="#">zxz</a></div>
+						</div>
 					</div>
 				</div>
 			</li>
 			<li class="article_overview">
 				<div class="article_overview_wrap">
 					<div class="content_header">
-						<a href="#" class="content_header_title">一二三四五六七八九十啊哦额</a>
-						<a href="#" class="content_header_avatar">
-							<img src="img/avatar.png">
-						</a>
+						<div  class="content_header_avatar">
+							<a><img src="img/avatar.png"></a>
+						</div>
+						<div class="content_header_title">
+							<div>
+								<a href="#">一二三四五六七八九十啊哦额</a>
+							</div>
+							<div>作者：<a href="#">zxz</a></div>
+						</div>
 					</div>
 				</div>
 			</li>
 			<li class="article_overview">
 				<div class="article_overview_wrap">
 					<div class="content_header">
-						<a href="#" class="content_header_title">一二三四五六七八九十啊哦额</a>
-						<a href="#" class="content_header_avatar">
-							<img src="img/avatar.png">
-						</a>
+						<div  class="content_header_avatar">
+							<a><img src="img/avatar.png"></a>
+						</div>
+						<div class="content_header_title">
+							<div>
+								<a href="#">一二三四五六七八九十啊哦额</a>
+							</div>
+							<div>作者：<a href="#">zxz</a></div>
+						</div>
 					</div>
 				</div>
 			</li>
@@ -193,26 +208,25 @@
 				<div class="article_overview_wrap">
 					
 					<div class="content_header">
-						<a href="#" class="content_header_avatar">
-							<img src="img/avatar.png" style="width: 100%;height: 100%;">
-						</a>
-						
-						<div class="content_header_title">
-							<a href="#">zxz</a>
+						<div  class="content_header_avatar">
+							<a><img src="img/avatar.png"></a>
 						</div>
-						<div class="content_add_time">2017-1-2 21:17:45</div>
-						<!--<img class="content_header_img" src="img/1.png">-->
+						<div class="content_header_title">
+							<div><a href="#">zxz的用户名</a></div>
+							<div  class="content_add_time">
+								发布于：2017-01-09 09:42:14
+							</div>
+						</div>
 					</div>
 					<div class="preview_content">
 						<div class="preview_content_show">
 							了的看法讲道理代理费中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断……
 						</div>
 						<div class="comment_op">
-							<div>赞</div>
-							<div>踩</div>
-							<div>回复</div>
-							<div>举报</div>
-							<div>评论(100)</div>
+							<a href="#">顶(10000)</a>
+							<a href="#">踩(10000)</a>
+							<a href="#">回复(10000)</a>
+							<a href="#">分享</a>
 						</div>
 					</div>
 				
@@ -224,14 +238,24 @@
 				<div class="article_overview_wrap">
 					<!--头部，评论用户信息、评论时间-->
 					<div class="content_header">
-						<a href="#" class="content_header_avatar">
-							<img src="img/avatar.png">
-						</a>
-						
-						<div class="content_header_title">
-							<a href="#">ck</a>
+						<div  class="content_header_avatar">
+							<a><img src="img/avatar.png"></a>
 						</div>
-						<div class="content_add_time">2017年1月9日09:42:14</div>
+						<div class="content_header_title">
+							<div><a href="#">zxz的用户名</a></div>
+							<div  class="content_add_time">
+								发布于：2017-01-09 09:42:14
+							</div>
+						</div>
+						
+<!--						<a href="#" class="content_header_avatar">-->
+<!--							<img src="img/avatar.png">-->
+<!--						</a>-->
+<!--						-->
+<!--						<div class="content_header_title">-->
+<!--							<a href="#">ck</a>-->
+<!--						</div>-->
+<!--						<div class="content_add_time">2017年1月9日09:42:14</div>-->
 					</div>
 					<!--关联评论-->
 					<div class="relative_comment_list">
@@ -239,9 +263,10 @@
 							<div>
 								<div class="comment_info">
 									<p>
+										<a href=""><img class="user_header_img" src="img/avatar.png"></a>
 										<a href="#">user1</a>
 										<a class="report_comment" href="#">举报</a>
-										<time>====2017-1-9 16:02:52</time>
+										<i class="time">2017-1-9 16:02:52</i>
 									</p>
 									<p>content1</p>
 
@@ -257,7 +282,7 @@
 								<p>
 									<a href="#">user2</a>
 									<a class="report_comment" href="#">举报</a>
-									<time>====2017-1-9 16:02:52</time>
+									<i class="time">2017-1-9 16:02:52</i>
 								</p>
 								<p>content2</p>
 
@@ -277,9 +302,10 @@
 							this user comment content
 						</div>
 						<div class="comment_op">
-							<div>踩(0)</div>
-							<div>回复(0)</div>
-							<div>举报</div>
+							<a href="#">顶(10000)</a>
+							<a href="#">踩(10000)</a>
+							<a href="#">回复(10000)</a>
+							<a href="#">分享</a>
 						</div>
 					</div>
 				</div>
@@ -403,14 +429,13 @@
 				'   <div class="article_overview_wrap">' +
 
 				'     <div class="content_header">' +
-				'        <a href="#" class="content_header_avatar">' +
-				'           <img src="img/avatar.png">' +
-				'        </a>' +
-
-				'        <div class="content_header_title">' +
-				'           <a href="#">{{username}}</a>' +
+				'        <div  class="content_header_avatar">' +
+				'            <a><img src="img/avatar.png"></a>' +
 				'        </div>' +
-				'        <div class="content_add_time">{{addtime}}</div>' +
+				'        <div class="content_header_title">' +
+				'           <div><a href="#">{{username}}</a></div>' +
+				'           <div  class="content_add_time">{{addtime}}</div>' +
+				'        </div>' +
 				'     </div>' +
 
 				'     {{relativeComment}}' +
@@ -418,9 +443,10 @@
 				'     <div class="preview_content">' +
 				'        <div class="preview_content_show">{{commentContent}}</div>' +
 				'        <div class="comment_op">' +
-				'           <div>踩(0)</div>' +
-				'           <div>回复(0)</div>' +
-				'           <div>举报</div>' +
+				'           <a href="#">顶(1000000)</a>' +
+				'           <a href="#">踩(1000000)</a>' +
+				'           <a href="#">回复(100000)</a>' +
+				'           <a href="#">分享</a>' +
 				'        </div>' +
 				'     </div>' +
 				'   </div>' +
@@ -428,9 +454,10 @@
 			relativeCommentInfo = ''
 				+ '<div class="comment_info">'
 				+ '   <p>'
+				+ '     <a href=""><img class="user_header_img" src="img/avatar.png"></a>'
 				+ '     <a href="#">{{username}}</a>'
 				+ '     <a class="report_comment" href="#">举报</a>'
-				+ '     <time>{{addtime}}</time>'
+				+ '     <i class="time">{{addtime}}</i>'
 				+ '   </p>'
 
 				+ '   <p>{{content}}</p>'
