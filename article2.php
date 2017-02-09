@@ -268,7 +268,7 @@
 										<a class="report_comment" href="#">举报</a>
 										<i class="time">2017-1-9 16:02:52</i>
 									</p>
-									<p>content1</p>
+									<p class="relative_comment_content">content1</p>
 
 									<p class="relative_comment_op">
 										<a href="#">顶(10000)</a>
@@ -460,7 +460,7 @@
 				+ '     <i class="time">{{addtime}}</i>'
 				+ '   </p>'
 
-				+ '   <p>{{content}}</p>'
+				+ '   <p class="relative_comment_content">{{content}}</p>'
 
 				+ '   <p class="relative_comment_op">'
 				+ '     <a href="#">顶({{up}})</a>'
