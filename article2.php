@@ -161,14 +161,6 @@
 							<img src="img/avatar.png">
 						</a>
 					</div>
-					<div class="overview_img" style="">
-						<img class="content_header_img" src="img/avatar.png">
-					</div>
-					<div class="preview_content">
-						<div class="preview_content_show">
-							了的看法讲道理代理费中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断……
-						</div>
-					</div>
 				</div>
 			</li>
 			<li class="article_overview">
@@ -179,14 +171,6 @@
 							<img src="img/avatar.png">
 						</a>
 					</div>
-					<div class="overview_img" style="">
-						<img class="content_header_img" src="img/avatar.png">
-					</div>
-					<div class="preview_content">
-						<div class="preview_content_show">
-							了的看法讲道理代理费中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断……
-						</div>
-					</div>
 				</div>
 			</li>
 			<li class="article_overview">
@@ -196,14 +180,6 @@
 						<a href="#" class="content_header_avatar">
 							<img src="img/avatar.png">
 						</a>
-					</div>
-					<div class="overview_img" style="">
-						<img class="content_header_img" src="img/avatar.png">
-					</div>
-					<div class="preview_content">
-						<div class="preview_content_show">
-							了的看法讲道理代理费中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断法中的洛克菲勒都放假了的看法讲道理代理费讲道理反垄断……
-						</div>
 					</div>
 				</div>
 			</li>

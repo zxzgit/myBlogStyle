@@ -5,7 +5,7 @@ common0bj.commonEvents.push(
 	['click', '.on', function () {alert(1442378);}]
 );
 common0bj.windowResizeEvents.push(
-	(function () {
+	(function () {return function () {};
 		return function () {
 			var mainClass = '.main',
 				mainDomWidth = $(mainClass).width(),

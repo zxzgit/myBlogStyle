@@ -99,7 +99,8 @@
 			return (function () {//头部、主区域自适应变化
 				var headerClass = '.header';
 				(window.outerWidth < (navListWidth + 20)) ? $(headerClass).hide().addClass('header_small_size') : $(headerClass).show().removeClass('header_small_size');
-				(window.outerWidth < (mainDomWidth + 50)) ? $(mainClass).addClass('main_small_size') : $(mainClass).removeClass('main_small_size');
+				(window.outerWidth < (mainDomWidth + 50)) ? $(mainClass).addClass('main_middle_size') : $(mainClass).removeClass('main_middle_size');
+				(window.outerWidth < 705) ? $(mainClass).addClass('main_small_size') : $(mainClass).removeClass('main_small_size');
 
 				(window.outerWidth < (mainDomWidth + 50)) ? $(footerMainClass).addClass('footer_main_small') : $(footerMainClass).removeClass('footer_main_small');
 				(window.outerWidth < 300) ? $(mainClass).addClass('main_smallest_size') : $(mainClass).removeClass('main_smallest_size');

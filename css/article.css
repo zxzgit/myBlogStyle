@@ -3,6 +3,7 @@
 .main .content_main .content_header{height: 40px;line-height: 42px;font-size: 19px;}
 
 .main .main_article .content_header{height: auto;}
+.main_small_size .main_article{background: white;}
 .main .content_main .content_header .article_more_info {font-size: 13px;display: block;line-height: 27px;}
 .main .content_main .content_header .title{display: block;font-size: x-large;width: 100%;text-align: center;}
 .main .content_main .content_header .article_more_info{width: 100%;text-align: center;}
