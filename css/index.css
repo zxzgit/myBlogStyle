@@ -1,4 +1,4 @@
-.main .content_main{width: 90%;min-height:80px;height:auto;overflow:hidden;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;background: white;}
+.main .content_main{width: 90%;min-height:80px;height:auto;overflow:hidden;margin: 0 auto 20px auto;border-radius: 5px;padding-bottom: 20px;background: white;background:#fff;border:1px solid #ccc;box-shadow:0 0 5px #eee;}
 .main_small_size .content_main{background: none;border-width: 0;width: 100%;border-radius: 0;padding: 0;margin: 0 auto;}/*小屏幕*/
 /*.main .content_main a:hover{text-decoration: underline;}*/
 
@@ -40,11 +40,11 @@
 /*.main .main_newest .content_header{background: #eae19d;}*/
 
 /*热点轮播图*/
-.main .main_hot_recommend{padding-bottom: 0;height: 351px;}
-.main .main_hot_recommend .hot_recommend_scroll{width: 100%;height:351px;display: block;margin:0 auto;position: relative;overflow:hidden;}
+.main .main_hot_recommend{padding-bottom: 0;}
+.main .main_hot_recommend .hot_recommend_scroll{width: 98%;height:331px;display: block;margin:1%;position: relative;overflow:hidden;}
 .main .main_hot_recommend .hot_recommend_scroll div{width: 100%;height: 100%;overflow: hidden;}
 .main .main_hot_recommend .hot_recommend_scroll div img{width: 100%;height: 100%;}
-.main .main_hot_recommend .hot_recommend_select{border: 0px solid greenyellow;width: 80%;height:25px;display: block;margin:10px auto;position: relative;overflow:hidden;top:-40px;}
+.main .main_hot_recommend .hot_recommend_select{border: 0px solid #cac1c1;width: 80%;height:25px;display: block;margin:10px auto;position: relative;overflow:hidden;}
 .main .main_hot_recommend .hot_recommend_select ul{display: block;height: 100%;width: 100%;margin: 0 auto;overflow: hidden;}
-.main .main_hot_recommend .hot_recommend_select li{background: #c2d0ce;display: inline-block;width:15px;height: 15px;float: left;text-align:center;line-height: 30px;/*border: 1px #7d7d77 solid;*/margin: 5px;cursor: pointer;opacity: 0.3;filter:alpha(opacity=40);border-radius: 7.5px;}
-.main .main_hot_recommend .hot_recommend_select .on{opacity: 1;filter:alpha(opacity=100);}
+.main .main_hot_recommend .hot_recommend_select li{background: #c9d2d0;display: inline-block;width:15px;height: 15px;float: left;text-align:center;margin: 5px;cursor: pointer;border-radius: 7.5px;}
+.main .main_hot_recommend .hot_recommend_select .on{background: #545151;}

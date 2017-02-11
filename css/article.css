@@ -1,12 +1,12 @@
 .header{}
 .header_small{}
-.main .main_article {background: none;border-width: 0;margin-bottom: 0;}
-.main .main_article .main_article_content{width: 70%;background: white;display: inline-block;float: left;border-radius: 5px;}
-.main .main_article .more_content_block{width: 29%;background: none;height:auto;min-height: 300px;display: inline-block;float: right;}
-.main .main_article .more_content_block div{margin-bottom: 9px;min-height: 100px;background: white;border-radius: 5px;}
+.main .main_article {background: none;border-width: 0;margin-bottom: 0;box-shadow: none;}
+.main .main_article .main_article_content{width: 70%;display: inline-block;float: left;border-radius: 5px;border: 1px solid #ccc;box-shadow: 0 0 5px #eee;}
+.main .main_article .more_content_block{width: 29%;height:auto;min-height: 300px;display: inline-block;float: right;}
+.main .main_article .more_content_block div{margin-bottom: 9px;min-height: 100px;background: white;border-radius: 5px;border: 1px solid #ccc;box-shadow: 0 0 5px #eee;}
 .main .content_main .content_header{height: 40px;line-height: 42px;font-size: 19px;}
 
-.main_small_size .main_article  .main_article_content{width: 100%;}
+.main_small_size .main_article  .main_article_content{width: 99%;}
 .main_small_size .main_article  .more_content_block{width: 100%;margin-top: 9px;}
 
 .main .main_article .content_header{height: auto;text-indent: 0;}

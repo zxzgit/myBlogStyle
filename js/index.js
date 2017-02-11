@@ -28,7 +28,7 @@ common0bj.windowResizeEvents.push(
 		selectScrollDiv = $('.jsSelectScroll'),
 		divImgList = $(scrollSwapDom).find('div'),
 		scrollCount = divImgList.length,//轮播图片数
-		selectLiWidth = 28,//每个选择器所需宽度
+		selectLiWidth = 25,//每个选择器所需宽度
 		doScroll = function () {
 			$(divImgList).hide();
 			$(divImgList[showId]).show();//展示轮到的图片
