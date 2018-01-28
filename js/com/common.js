@@ -65,13 +65,13 @@
 	};
 
 	//全局commonObj对象建立
-	window.common0bj = new commonClass();
+	window.commonObj = new commonClass();
 
 
 	/************************************ 通用事件绑定 ************************************************/
 
 
-	common0bj.commonEvents = [//小屏头部显隐先关控制
+	commonObj.commonEvents = [//小屏头部显隐先关控制
 		[
 			'click',
 			'.nav_toggle',
@@ -89,7 +89,7 @@
 	];
 
 
-	common0bj.windowResizeEvents.push(//头部、尾部、内容显示区根据屏幕调整控制
+	commonObj.windowResizeEvents.push(//头部、尾部、内容显示区根据屏幕调整控制
 		(function () {
 			//页面DOM根据可视区域变化
 			var mainClass = '.main',

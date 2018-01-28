@@ -56,7 +56,7 @@ define(function (require, exports, module) {
 		};
 
 		//全局commonObj对象建立
-		window.common0bj = new commonClass();
+		window.commonObj = new commonClass();
 
 
 		/**
@@ -64,7 +64,7 @@ define(function (require, exports, module) {
 		 * @returns {*[]} 事件数组
 		 * @private
 		 */
-		common0bj.commonEvents=[
+		commonObj.commonEvents=[
 			[
 				'click',
 				'.nav_toggle',
@@ -83,7 +83,7 @@ define(function (require, exports, module) {
 		];
 
 
-		common0bj.windowResizeEvents.push(
+		commonObj.windowResizeEvents.push(
 				(function(){
 					//页面DOM根据可视区域变化
 					var mainClass = '.main',

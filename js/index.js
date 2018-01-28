@@ -1,10 +1,10 @@
 /**
  * Created by zxz on 2017/1/1.
  */
-common0bj.commonEvents.push(
+commonObj.commonEvents.push(
 	['click', '.on', function () {alert(1442378);}]
 );
-common0bj.windowResizeEvents.push(
+commonObj.windowResizeEvents.push(
 	(function () {return function () {};
 		return function () {
 			var mainClass = '.main',
